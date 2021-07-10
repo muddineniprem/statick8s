@@ -1,14 +1,15 @@
-
 apiVersion: v1
 kind: Service
 metadata:
   name: static-svc
   namespace: static
 spec:
-  selector: 
+  selector:
     app: static
   ports:
     - protocol: TCP
       port: 80
       targetPort: 80
-  type: loadbalancer
+  #by default it will go with cluster ip if u want to go withld un comment the below line
+  type: LoadBalancer
+
