@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: static
+  namespace: static
+spec:
+  selector:
+    matchLabels:
+      app: static
+  replicas: 1 # tells deployment to run 2 pods matching the template
+  template:
+    metadata:
+      labels:
+        app:static
+    spec:
+      containers:
+      - name: static
+        image: 060920346106.dkr.ecr.us-east-2.amazonaws.com/premk8s:4
+        ports:
+        - containerPort: 80
