@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: staticwebsite
-        image:060920346106.dkr.ecr.us-east-2.amazonaws.com/premk8s:12
+        image:060920346106.dkr.ecr.us-east-2.amazonaws.com/premk8s:22
         ports:
         - containerPort: 80
