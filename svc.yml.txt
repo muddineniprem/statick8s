@@ -11,5 +11,5 @@ spec:
       port: 80
       targetPort: 80
   #by default it will go with cluster ip if u want to go withld un comment the below line
-  type: LoadBalancer
+  #type: LoadBalancer
 
